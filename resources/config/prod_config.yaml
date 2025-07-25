@@ -1,0 +1,6 @@
+SLACK_CHANNEL_NAME: build-status
+ENVIRONMENT: prod
+CODE_BASE_PATH: .
+ACTION_MESSAGE: "Deploying SonarQube via Ansible"
+KEEP_APPROVAL_STAGE: true
+
