@@ -35,7 +35,7 @@ def call(String configFilePath = 'config/prod_config.yaml') {
             stage('Execute Ansible Playbook') {
                 steps {
                     sh """
-                        ansible-playbook -i inventory/hosts.ini main.yml
+                        ansible-playbook  -i SQ_Inventory.ini main.yml
                     """
                 }
             }
