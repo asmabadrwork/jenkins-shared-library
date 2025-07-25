@@ -19,7 +19,7 @@ def call(String configFilePath = 'config/prod_config.yaml') {
 
             stage('Clone Ansible Repo') {
                 steps {
-                    git url: 'https://github.com/asmabadrwork/ansible-sonarqube-repo.git'
+                    git branch: 'main', url: 'https://github.com/asmabadrwork/ansible-sonarqube-repo.git'
                 }
             }
 
